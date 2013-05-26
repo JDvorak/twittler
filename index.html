@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style id="tweet-style"></style>
+  </head>
+  <body>
+    <form class="modal tweet-modal hide fade" id="send-tweet">
+      <header class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>Type your tweet below:</h3>
+      </header>
+      <div class="modal-body row-fluid">
+        <textarea class="span12"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button class="btn close-modal" data-dismiss="modal">Close</button>
+        <button class="btn btn-primary send-tweet">Tweet</button>
+      </div>
+    </form>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <a href="#send-tweet" class="btn btn-primary" data-toggle="modal">Tweet</a>
+        <a href="#" class="btn btn-primary btn-home">All Users</a>
+        <a href="#return" class="btn return hide pull-right">
+          <span class="badge badge-important hide"></span>
+          Top
+        </a>
+      </div>
+
+    </div>
+      <span class="title pull-left"></span>
+    <div class="row-fluid container">
+      <div class="span8 offset2">
+        <ul class="timeline unstyled"></ul>
+      </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+    <script src="twitter_data.js"></script>
+    <script src="twitter_client.js"></script>
+  </body>
+</html>
